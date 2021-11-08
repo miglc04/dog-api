@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:5.0.3
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: nestjs
+    ports:
+      - 27018:27017
